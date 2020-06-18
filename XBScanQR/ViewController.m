@@ -17,10 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"主页";
+    self.title = @"Home Page";
     
     UIButton* btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 200, 100, 40)];
-    [btn setTitle:@"Sacn" forState:UIControlStateNormal];
+    [btn setTitle:@"Scan" forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(scanAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
