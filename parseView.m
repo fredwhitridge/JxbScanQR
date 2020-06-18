@@ -103,7 +103,9 @@ static BOOL scanHasBeenSaved;
 - (void)viewDidLoad {
     [super viewDidLoad];
     GlobalVariables *obj=[GlobalVariables getInstance];
-    NSLog(@"\r\n\n*** At ParseView did Load ****\r\n\n");
+    NSLog(@"\r\n\n*** At parseView did Load ****\r\n\n");
+    NSLog(@"*** At parseView rawQR = : %@", obj.rawQR);
+
 
     if ((obj.typeOfScanSelected = TRUE)) {
         saveScans.enabled=TRUE;

@@ -90,6 +90,11 @@
     
     __weak typeof (self) wSelf = self;
     [reader setCompletionWithBlock:^(NSString *resultAsString) {
+        //next two lines added by FW 6/18/20 for segue to parseView
+        GlobalVariables *obj=[GlobalVariables getInstance];
+        obj.rawQR = resultAsString;
+        NSLog(@"*** At ViewController rawQR = : %@", obj.rawQR);
+
         [wSelf.navigationController popViewControllerAnimated:YES];
         [[[UIAlertView alloc] initWithTitle:@"" message:resultAsString delegate:self cancelButtonTitle:@"OK?" otherButtonTitles: nil] show];
     }];

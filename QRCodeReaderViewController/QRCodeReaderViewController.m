@@ -27,6 +27,8 @@
 #import "QRCodeReaderViewController.h"
 #import "QRCameraSwitchButton.h"
 #import "QRCodeReaderView.h"
+//Added by fw 6/18/20
+#import "GlobalVariables.h"
 
 #define mainHeight     [[UIScreen mainScreen] bounds].size.height
 #define mainWidth      [[UIScreen mainScreen] bounds].size.width
@@ -164,6 +166,7 @@
 
 - (void)setCompletionWithBlock:(void (^) (NSString *resultAsString))completionBlock
 {
+   
     self.completionBlock = completionBlock;
 }
 
