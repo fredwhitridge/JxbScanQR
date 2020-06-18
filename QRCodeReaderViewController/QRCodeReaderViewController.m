@@ -91,7 +91,7 @@
 {
     [super viewDidLoad];
     
-     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"相册" style:UIBarButtonItemStylePlain target:self action:@selector(clickRightBarButton:)];
+     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Photo Album" style:UIBarButtonItemStylePlain target:self action:@selector(clickRightBarButton:)];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -199,7 +199,7 @@
     CGFloat y = (s_height - c_width) / 2 - s_height / 6;
     
     _lblTip = [[UILabel alloc] initWithFrame:CGRectMake(0,y + 90 + c_width, mainWidth, 15)];
-    _lblTip.text = @"将二维码放入框内 即可自动扫描";
+    _lblTip.text = @"Place the QR code in the box to automatically scan";
     _lblTip.textColor = [UIColor whiteColor];
     _lblTip.font = [UIFont systemFontOfSize:13];
     _lblTip.textAlignment = NSTextAlignmentCenter;
