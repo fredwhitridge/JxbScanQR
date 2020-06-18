@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C257B95249C15BB00CE254D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C257B94249C15BA00CE254D /* MainStoryboard_iPhone.storyboard */; };
+		1C257B98249C15FC00CE254D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C257B96249C15FC00CE254D /* ViewController.m */; };
+		1C257B9B249C18F000CE254D /* GlobalVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C257B9A249C18EF00CE254D /* GlobalVariables.m */; };
+		1C257B9D249C1AE800CE254D /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 1C257B9C249C1AE800CE254D /* Sounds */; };
+		1C257BA0249C1BFE00CE254D /* parseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C257B9E249C1BFE00CE254D /* parseView.m */; };
 		D03179EB1ACD3D350095D309 /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = D03179EA1ACD3D350095D309 /* beep.wav */; };
 		D0CAD9C11AA8008C00D6605B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CAD9C01AA8008C00D6605B /* main.m */; };
 		D0CAD9C41AA8008C00D6605B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CAD9C31AA8008C00D6605B /* AppDelegate.m */; };
-		D0CAD9C71AA8008C00D6605B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CAD9C61AA8008C00D6605B /* ViewController.m */; };
+		D0CAD9C71AA8008C00D6605B /* (XBscan) ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CAD9C61AA8008C00D6605B /* (XBscan) ViewController.m */; };
 		D0CAD9CA1AA8008C00D6605B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0CAD9C81AA8008C00D6605B /* Main.storyboard */; };
 		D0CAD9CC1AA8008C00D6605B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0CAD9CB1AA8008C00D6605B /* Images.xcassets */; };
 		D0CAD9CF1AA8008C00D6605B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0CAD9CD1AA8008C00D6605B /* LaunchScreen.xib */; };
@@ -31,14 +36,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C257B94249C15BA00CE254D /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		1C257B96249C15FC00CE254D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1C257B97249C15FC00CE254D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1C257B99249C18EF00CE254D /* GlobalVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalVariables.h; sourceTree = "<group>"; };
+		1C257B9A249C18EF00CE254D /* GlobalVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalVariables.m; sourceTree = "<group>"; };
+		1C257B9C249C1AE800CE254D /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		1C257B9E249C1BFE00CE254D /* parseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parseView.m; sourceTree = "<group>"; };
+		1C257B9F249C1BFE00CE254D /* parseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parseView.h; sourceTree = "<group>"; };
 		D03179EA1ACD3D350095D309 /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
 		D0CAD9BB1AA8008C00D6605B /* XBScanQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBScanQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0CAD9BF1AA8008C00D6605B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0CAD9C01AA8008C00D6605B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D0CAD9C21AA8008C00D6605B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D0CAD9C31AA8008C00D6605B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D0CAD9C51AA8008C00D6605B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D0CAD9C61AA8008C00D6605B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D0CAD9C51AA8008C00D6605B /* (XBScan) ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "(XBScan) ViewController.h"; sourceTree = "<group>"; };
+		D0CAD9C61AA8008C00D6605B /* (XBscan) ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "(XBscan) ViewController.m"; sourceTree = "<group>"; };
 		D0CAD9C91AA8008C00D6605B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0CAD9CB1AA8008C00D6605B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D0CAD9CE1AA8008C00D6605B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -75,6 +88,11 @@
 		D0CAD9B21AA8008C00D6605B = {
 			isa = PBXGroup;
 			children = (
+				1C257B9F249C1BFE00CE254D /* parseView.h */,
+				1C257B9E249C1BFE00CE254D /* parseView.m */,
+				1C257B97249C15FC00CE254D /* ViewController.h */,
+				1C257B96249C15FC00CE254D /* ViewController.m */,
+				1C257B94249C15BA00CE254D /* MainStoryboard_iPhone.storyboard */,
 				D0CAD9E41AA8010200D6605B /* QRCodeReaderViewController */,
 				D0CAD9BD1AA8008C00D6605B /* XBScanQR */,
 				D0CAD9D71AA8008C00D6605B /* XBScanQRTests */,
@@ -96,8 +114,11 @@
 			children = (
 				D0CAD9C21AA8008C00D6605B /* AppDelegate.h */,
 				D0CAD9C31AA8008C00D6605B /* AppDelegate.m */,
-				D0CAD9C51AA8008C00D6605B /* ViewController.h */,
-				D0CAD9C61AA8008C00D6605B /* ViewController.m */,
+				D0CAD9C51AA8008C00D6605B /* (XBScan) ViewController.h */,
+				D0CAD9C61AA8008C00D6605B /* (XBscan) ViewController.m */,
+				1C257B9C249C1AE800CE254D /* Sounds */,
+				1C257B99249C18EF00CE254D /* GlobalVariables.h */,
+				1C257B9A249C18EF00CE254D /* GlobalVariables.m */,
 				D0CAD9C81AA8008C00D6605B /* Main.storyboard */,
 				D0CAD9CB1AA8008C00D6605B /* Images.xcassets */,
 				D0CAD9CD1AA8008C00D6605B /* LaunchScreen.xib */,
@@ -229,6 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C257B9D249C1AE800CE254D /* Sounds in Resources */,
+				1C257B95249C15BB00CE254D /* MainStoryboard_iPhone.storyboard in Resources */,
 				D03179EB1ACD3D350095D309 /* beep.wav in Resources */,
 				D0CAD9CA1AA8008C00D6605B /* Main.storyboard in Resources */,
 				D0CAD9CF1AA8008C00D6605B /* LaunchScreen.xib in Resources */,
@@ -250,11 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0CAD9C71AA8008C00D6605B /* ViewController.m in Sources */,
+				1C257B98249C15FC00CE254D /* ViewController.m in Sources */,
+				D0CAD9C71AA8008C00D6605B /* (XBscan) ViewController.m in Sources */,
+				1C257BA0249C1BFE00CE254D /* parseView.m in Sources */,
 				D0CAD9EE1AA8010200D6605B /* QRCodeReaderViewController.m in Sources */,
 				D0CAD9C41AA8008C00D6605B /* AppDelegate.m in Sources */,
 				D0CAD9ED1AA8010200D6605B /* QRCodeReaderView.m in Sources */,
 				D0CAD9C11AA8008C00D6605B /* main.m in Sources */,
+				1C257B9B249C18F000CE254D /* GlobalVariables.m in Sources */,
 				D0CAD9EC1AA8010200D6605B /* QRCameraSwitchButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

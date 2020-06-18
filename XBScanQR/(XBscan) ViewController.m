@@ -5,7 +5,7 @@
 //  Created by Peter on 15/3/5.
 //  Copyright (c) 2015年 Peter. All rights reserved.
 //
-
+/*
 #import "ViewController.h"
 #import "QRCodeReaderViewController.h"
 
@@ -43,7 +43,7 @@
     __weak typeof (self) wSelf = self;
     [reader setCompletionWithBlock:^(NSString *resultAsString) {
         [wSelf.navigationController popViewControllerAnimated:YES];
-        [[[UIAlertView alloc] initWithTitle:@"" message:resultAsString delegate:self cancelButtonTitle:@"好的" otherButtonTitles: nil] show];
+        [[[UIAlertView alloc] initWithTitle:@"" message:resultAsString delegate:self cancelButtonTitle:@"OK?" otherButtonTitles: nil] show];
     }];
     
     //[self presentViewController:reader animated:YES completion:NULL];
@@ -66,3 +66,4 @@
 }
 
 @end
+*/

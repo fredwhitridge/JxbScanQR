@@ -15,25 +15,32 @@
 
 @implementation AppDelegate
 
-
+/*
+ //fw commented out 6/18/20 was loading screen after storyboard
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+        
     
     [self setWindow:[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]];
     
     ViewController* vc = [[ViewController alloc] init];
+   
     UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:vc];
     
     UIViewController *rootViewController = nav;
-    [[self window] setRootViewController:rootViewController];
     
+    [[self window] setRootViewController:rootViewController];
+   
     // set  backgroundColor
-    [[self window] setBackgroundColor:[UIColor whiteColor]];
+    //fw changed to green 6/18/20
+    [[self window] setBackgroundColor:[UIColor greenColor]];
     // set  makeKeyAndVisible
-    [[self window] makeKeyAndVisible];
+    //[[self window] makeKeyAndVisible];
+    [[self window] makeKeyWindow];
+
     
     return YES;
 }
-
+*/
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
