@@ -94,24 +94,33 @@
         GlobalVariables *obj=[GlobalVariables getInstance];
         obj.rawQR = resultAsString;
         NSLog(@"*** At ViewController rawQR = : %@", obj.rawQR);
-
+        
+ 
+        
+       /* fw attempt to squash popup 6/19/20
         [wSelf.navigationController popViewControllerAnimated:YES];
         [[[UIAlertView alloc] initWithTitle:@"" message:resultAsString delegate:self cancelButtonTitle:@"OK?" otherButtonTitles: nil] show];
+       */
     }];
     
     [self presentViewController:reader animated:YES completion:NULL];
     [self.navigationController pushViewController:reader animated:YES];
+    //rawQR may be null
+    //[self performSegueWithIdentifier:@"parse" sender:self];
 }
 
 #pragma mark - QRCodeReader Delegate Methods
 
 - (void)reader:(QRCodeReaderViewController *)reader didScanResult:(NSString *)result
 {
+    [self performSegueWithIdentifier:@"parse" sender:self];
+
+  
     [self dismissViewControllerAnimated:YES completion:^{
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"QRCodeReader" message:result delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [alert show];
+        //[alert show];
     }];
-}
+     [self performSegueWithIdentifier:@"parse" sender:self];}
 
 - (void)readerDidCancel:(QRCodeReaderViewController *)reader
 {

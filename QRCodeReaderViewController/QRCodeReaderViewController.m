@@ -376,10 +376,14 @@
             if (_completionBlock) {
                 [_beepPlayer play];
                 _completionBlock(scannedResult);
+                
             }
 
             if (_delegate && [_delegate respondsToSelector:@selector(reader:didScanResult:)]) {
                 [_delegate reader:self didScanResult:scannedResult];
+                //fw atttempt 6/19/20
+               // [self performSegueWithIdentifier:@"parse" sender:self];
+
             }
 
             break;

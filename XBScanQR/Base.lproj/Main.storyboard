@@ -32,13 +32,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh0-3m-KP9">
-                                <rect key="frame" x="247" y="167" width="99" height="40"/>
+                                <rect key="frame" x="247" y="167" width="99" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Parse"/>
                                 <connections>
-                                    <segue destination="tZY-3X-AzQ" kind="presentation" id="qmG-LQ-oQQ"/>
+                                    <segue destination="tZY-3X-AzQ" kind="presentation" identifier="parse" id="nQ9-rc-QHd"/>
                                 </connections>
                             </button>
                         </subviews>
