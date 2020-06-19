@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *physBin;
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
+@property (nonatomic, strong) dispatch_queue_t queue;
 
 //picker 1 is first component, etc
 @property (strong, nonatomic) NSArray *picker1;

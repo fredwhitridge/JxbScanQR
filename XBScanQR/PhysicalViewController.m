@@ -20,9 +20,15 @@
 - (void) viewWillAppear:(BOOL)animated{
     if([[NSUserDefaults standardUserDefaults] boolForKey:@"scanningMillIn"]) {
         self.view.backgroundColor =[UIColor greenColor];
+       // dispatch_queue_t _queue;
+        //_queue.main.async {
+        self.physBin.text = @"(Mill In/Out Bin Selected at Scan)";
+        
     }
     if(![[NSUserDefaults standardUserDefaults] boolForKey:@"scanningMillIn"]) {
         self.view.backgroundColor =[UIColor blueColor];
+        self.physBin.text = @"Select Physical Bin";
+
     }
 
 }
